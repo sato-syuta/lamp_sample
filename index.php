@@ -57,13 +57,13 @@ try {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($result as $value) { ?>
+                    <?php foreach($result as $value) { 
                     <tr>
                         <th>echo "$value [id]" </th>
                         <td>echo "$value [name]"</td>
                         <td>echo "$value [age]"</td>
                     </tr>
-                    <?php } ?>
+                     } ?>
                 </tbody>
             </table>
         </div>
