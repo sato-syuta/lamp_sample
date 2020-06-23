@@ -57,13 +57,13 @@ try {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($result as $value) { 
-                    echo"<tr>
+                    <?php foreach($result as $value) { ?>
+                    <tr>
                         echo "<th> $value [id] </th>"
-                        echo "<td>echo $value [name] </td>"
-                        echo "<td>echo $value []</td>"
-                    </tr>"
-                    ?>
+                        echo "<td> $value [name] </td>"
+                        echo "<td> $value []</td>"
+                    </tr>
+                   <?php ?>
                 </tbody>
             </table>
         </div>

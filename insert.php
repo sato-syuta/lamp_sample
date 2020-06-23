@@ -15,9 +15,10 @@ try {
     $params =(':id' =>$id, ':name' =>$name, ':age' =>$age)
     $result = $dbh->query($sql);
 
-    header('./Location: index.php? *fg=1')
+    header('./Location: index.php?fg=1')
 } catch (PDOException $e) {
     echo "接続失敗: " . $e->getMessage() . "\n";
+    
     exit();
 }
 ?>
