@@ -58,11 +58,11 @@ try {
                 </thead>
                 <tbody>
                     <?php foreach($result as $value) { 
-                    <tr>
-                        echo "<th> $value [id] </th>"
-                        echo "<td>echo $value [name] </td>"
-                        echo "<td>echo $value []</td>"
-                    </tr>
+                    echo"<tr>
+                         <th> $value [id] </th>
+                        <td>echo $value [name] </td>
+                        <td>echo $value []</td>
+                    </tr>"
                     ?>
                 </tbody>
             </table>
