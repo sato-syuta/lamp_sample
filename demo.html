@@ -1,17 +1,3 @@
-<?php
-$dsn = 'mysql:dbname=sample_db;host=localhost;';
-$user = 'sato';
-$password = 'tktk0622';
-try {
-    $dbh = new PDO($dsn, $user, $password);
-
-    $sql = "select * from user";
-    $result = $dbh->query($sql);
-} catch (PDOException $e) {
-    echo "接続失敗: " . $e->getMessage() . "\n";
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -57,13 +43,21 @@ try {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($result as $value) { ?>
                     <tr>
-                        <th>echo "$value [id]" </th>
-                        <td>echo "$value [name]"</td>
-                        <td>echo "$value [age]"</td>
+                        <th>1</th>
+                        <td>User</td>
+                        <td>20</td>
                     </tr>
-                    <?php } ?>
+                    <tr>
+                        <th>1</th>
+                        <td>User</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>User</td>
+                        <td>20</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
