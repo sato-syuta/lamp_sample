@@ -67,7 +67,22 @@ try {
                 </tbody>
             </table>
         </div>
-        <div id="tab2" class="tap_panel active"><h1>sample2</h1></div>
+        <div id="tab2" class="tap_panel active"><div id="tab2" class="tap_panel active"> 
+            <form class="mt-5" action="./insert.php" method="POST">
+                <div class="form-group">
+                    <label for="" class="">id</label>
+                    <input type="text" name="id" id="id">
+                </div>
+                <div class="form-group">
+                    <label for="" class="">name</label>
+                    <input type="text" name="id" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="" class="">age</label>
+                    <input type="text" name="id" id="Age">
+                </div>
+            </form>
+        </div></div>
         <div id="tab3" class="tap_panel active"><h1>sample3</h1></div>
         <div id="tab4" class="tap_panel active"><h1>sample4</h1></div>
     </div>
