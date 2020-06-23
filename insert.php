@@ -13,7 +13,7 @@ try {
     $sql = "insert into user values(id,name,age)";
     $stat = $dbh->prepare($sql)
     $params =(':id' =>$id, ':name' =>$name, ':age' =>$age)
-    $result = $dbh->query($sql);
+    $stat->execute($params);
 
     header('./Location: index.php?fg=1')
 } catch (PDOException $e) {
