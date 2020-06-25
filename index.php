@@ -45,10 +45,20 @@ try {
     </div>
 
     <div class="container">
-        <?php if($_GET['fg'] == 1) { ?>
-            <p>success</p>
+    <?php if ($_GET['fg'] == 1) { ?>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Processing is complete . <strong>Success!!</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         <?php } else if ($_GET['fg'] == 2) { ?>
-            <p>failed</p>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Processing is complete . <strong>Failed!!</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
         <?php } ?>
     </div>
     <div class="container">
