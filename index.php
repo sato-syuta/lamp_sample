@@ -57,13 +57,13 @@ try {
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($result as $value) { ?>
+                    <?php foreach($result as $value) { 
                     <tr>
                         echo "<th> $value [id] </th>"
                         echo "<td> $value [name] </td>"
                         echo "<td> $value []</td>"
                     </tr>
-                   <?php ?>
+                   ?>
                 </tbody>
             </table>
         </div>
@@ -83,7 +83,20 @@ try {
                 </div>
             </form>
         </div></div>
-        <div id="tab3" class="tap_panel active"><h1>sample3</h1></div>
+        <div id="tab3" class="tap_panel active"> <form class="mt-5" action="./update.php" method="POST">
+                <div class="form-group">
+                    <label for="" class="">id</label>
+                    <input type="text" name="id" id="id">
+                </div>
+                <div class="form-group">
+                    <label for="" class="">name</label>
+                    <input type="text" name="id" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="" class="">age</label>
+                    <input type="text" name="id" id="Age">
+                </div>
+            </form></div>
         <div id="tab4" class="tap_panel active"><h1>sample4</h1></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

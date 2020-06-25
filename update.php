@@ -10,7 +10,7 @@ try {
     $name = $_POST["name"];
     $age = $_POST["age"];
 
-    $sql = "insert into user values(id,name,age)";
+    $sql = "update  user set name=:name,age=:age where id = :id";
     $stat = $dbh->prepare($sql)
     $params =(':id' =>$id, ':name' =>$name, ':age' =>$age)
     $stat->execute($params);
